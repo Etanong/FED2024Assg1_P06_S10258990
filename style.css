@@ -50,6 +50,7 @@ header nav ul li {
     color: white; 
 }
 
+
 /* Hero Section */
 .hero {
     display: flex;
@@ -98,33 +99,46 @@ header nav ul li {
     border: 2px solid #6a0dad;
 }
 
-/* Info Section */
+/* Info Section as Buttons */
 .info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Spacing between cards */
     padding: 20px;
-    background: #f4f4f4;
+    background: #f4f4f4; /* Light background for contrast */
 }
 
 .info .card {
-    background: #f3e8ff; /* Light purple to match the theme */
-    border: 1px solid #d6b3ff; /* Subtle border with a slightly darker purple */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: block; /* Make the entire card clickable */
+    background: #6a0dad; /* Purple background to match the theme */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     padding: 20px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.2s; /* Add hover interaction */
+    text-align: center; /* Center-align text */
+    color: white; /* White text for better contrast */
+    text-decoration: none; /* Remove underline for links */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
 }
 
 .info .card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    background: darkorchid; /* Darker purple shade on hover */
 }
 
 .info .card h2 {
-    margin-top: 0;
+    margin-top: 0; /* Remove extra margin */
+    font-size: 1.5rem; /* Slightly larger font for emphasis */
+    color: white; /* Ensure title remains visible */
 }
+
+.info .card p {
+    font-size: 1rem;
+    margin: 10px 0 0; /* Small gap below the heading */
+    line-height: 1.5; /* Improve readability */
+    color: #eaeaea; /* Slightly lighter color for the description */
+}
+
 
 /* Footer Section */
 footer {
@@ -231,3 +245,52 @@ footer .social-media a:hover {
     border: 2px solid #6a0dad;
 }
 
+/* SBPK Section Styling with Adjusted Brightness */
+.sbpk-section {
+    position: relative;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.7) 100%), /* Gradient overlay with less darkness on the left */
+        url('Ethan.jpg') no-repeat center left / cover, /* First image */
+        url('Chloe.jpg') no-repeat center center / cover, /* Second image */
+        url('Marcus.jpg') no-repeat center right / cover; /* Third image */
+    color: white; /* White text for contrast */
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; /* Prevent content overflow */
+    background-size: 33.33% 100%; /* Ensure each image takes one-third of the width */
+    background-repeat: no-repeat;
+}
+
+/* Ensure Content Stays on Top */
+.sbpk-content {
+    position: relative;
+    z-index: 1; /* Bring text above the background */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sbpk-section h1 {
+    font-family: 'Brush Script', cursive;
+    font-size: 6rem; /* Large heading size */
+    color: red;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.sbpk-section p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Add more spacing between lines */
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .sbpk-section {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), /* Lighter gradient for smaller screens */
+            url('Chloe.jpg') no-repeat center center / cover; /* Show only one image */
+    }
+}

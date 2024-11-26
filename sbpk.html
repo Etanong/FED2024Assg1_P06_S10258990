@@ -5,6 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTR1M SKATES</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styling for SBPK-Names Section */
+        .SBPK-Names {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start; /* Align content to the top */
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: black; /* Background color */
+            gap: 20px; /* Space between image and text */
+        }
+
+        .SBPK-Names:nth-child(even) {
+            flex-direction: row-reverse; /* Alternate sections reverse image and text */
+        }
+
+        .SBPK-Names .image-container {
+            flex: 1; /* Image side takes equal space */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align image to the top */
+        }
+
+        .SBPK-Names .image-container img {
+            width: 100%;
+            max-width: 600px; 
+            border-radius: 10px; /* Rounded corners */
+            object-fit: cover; /* Maintain image aspect ratio */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .SBPK-Names .text-container {
+            flex: 1; /* Text side takes equal space */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align text to the top */
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .SBPK-Names .text-container h2 {
+            font-size: 3rem;
+            color: red; /* Red text color for title */
+            font-family: 'Brush Script', cursive;
+            font-style: italic;
+            margin-bottom: 10px; /* Reduced gap between h2 and p */
+        }
+
+        .SBPK-Names .text-container p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: white; /* White text color for description */
+        }
+        
+        li { 
+            font-size: 1rem;
+            line-height: 1.6;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>    <!-- header-->
@@ -19,3 +79,134 @@
             </ul>
         </nav>
     </header>
+
+    <section class="sbpk-section">      <!-- section for sbpk-->
+        <div class="sbpk-content">
+            <h1 style="font-family: 'Brush Script'; font-size: 9rem; color: red; font-style: italic;">
+                 SBPK Slide
+            </h1>
+            <p style="margin-top: -100px;">Established in 2023, SBPK Slide is a passionate team of youth inline freestyle 
+                sliders from Singapore.
+                 Committed to excellence, the team embodies the spirit of determination, discipline, and unity.
+                With a relentless drive to succeed, SBPK Slide is willing to train tirelessly and give their 
+                all to achieve victory in competitions. The team thrives on pushing boundaries, honing their 
+                skills, and representing Singapore on both local and international stages. 
+                SBPK Slide isn’t just a sports team; it’s a testament to the power of dedication and the love 
+                for the sport. Together, they strive to inspire and achieve greatness, one slide at a time. read 
+                below to see their achievements</p>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Marcusslide.jpg" alt="Left side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 100px;">Marcus</h2>
+            <p style="margin-left: 100px;">
+                <ol  style="margin-left: 80px;">
+                    <li>2nd Singapore Rollersports Skating Competition 2024 </li>
+                    <li>1st Singapore Inline Tournament 2024</li>
+                    <li>5th Chuncheon International World Cup 2024 </li>
+                    <li>5th Tianjin Ninghe International Roller Skating Open 2024</li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 100px;"> World Ranking : 26</h2>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Chloe.jpg" alt="Right side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 210px;">Chloe</h2>
+            <p style=" margin-left : 200px">
+                <ol style="margin-left: 190px;">
+                    <li>2nd Singapore RollerSports Skating Competition 2024</li>
+                    <li>1st Ernsports Mini Competition 2024 </li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 200px;"> World Ranking : 76</h2>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Aaron.jpg" alt="Right side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 100px;">Aaron</h2>
+            <p style=" margin-left : 100px">
+                <ol style= "margin-left: 90px;">
+                    <li>3rd Singapore Rollersports Skating Competition 2024</li>
+                    <li>2nd Singapore Inline Tournament 2024</li>
+                    <li>4th Chuncheon International World Cup 2024</li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 100px;">World Ranking : 52</h2>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Ethan.jpg" alt="Right side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 210px;">Ethan</h2>
+            <p style=" margin-left : 200px">
+                <ol style="margin-left: 200px;">
+                    <li>4th Singapore Rollersports Skating Competition 2024</li>
+                    <li>3rd Singapore Inline Tournament 2024</li>
+                    <li>7th Chuncheon International World Cup 2024</li>
+                    <li>9th Tianjin Ninghe International Open 2024</li>
+                    <li>2nd Annual Uni-Skate Games 2024</li>
+                    <li>2nd Singapore Poly Skate Competition 2024</li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 200px;">World Ranking : 36</h2>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Yq.jpg" alt="Right side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 100px;">Yi Qian</h2>
+            <p style=" margin-left : 100px">
+                <ol style="margin-left: 100px;">
+                    <li>3rd Singapore Rollersports Skating Competiton 2024</li>
+                    <li>1st Chuncheon International World Cup 2024</li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 100px;">World Ranking : 29</h2>
+        </div>
+    </section>
+
+    <section class="SBPK-Names">
+        <div class="image-container">
+            <img src="Matin.jpg" alt="Right side image">
+        </div>
+        <div class="text-container">
+            <h2 style="margin-left: 100px;">Matin</h2>
+            <p style=" margin-left : 100px">
+                <ol style="margin-left: 80px;">
+                    <li>1st Singapore Rollersports Skating Competition 2024</li>
+                    <li>1st Singapore Inline Tournament 2024</li>
+                    <li>5th Tianjin Ninghe International Open 2024</li>
+                    <li>1st Annual Uni-Skate Games 2024</li>
+                </ol>
+            </p>
+            <h2 style="margin-left: 100px;">World Ranking : 115</h2>
+        </div>
+    </section>
+
+    <footer>      <!-- footer-->
+        <p>© 2024 NTR1M SKATES. All Rights Reserved.</p>
+        <div class="social-media">
+             <a href="https://www.instagram.com/sbpk.slide/">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
