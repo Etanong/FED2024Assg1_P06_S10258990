@@ -50,26 +50,6 @@ header nav ul li {
     color: white; 
 }
 
-/* Button Styling for Links */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    background: #6a0dad; /* Purple theme button */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.button:hover {
-    background: white;
-    color: #6a0dad;
-    border: 2px solid #6a0dad;
-}
 
 /* Hero Section */
 .hero {
@@ -100,6 +80,23 @@ header nav ul li {
     font-size: 1.5rem; 
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background: #6a0dad; /* Purple theme button */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.hero-content button:hover {
+    background: white;
+    color: #6a0dad;
+    border: 2px solid #6a0dad;
 }
 
 /* Info Section as Buttons */
@@ -142,6 +139,7 @@ header nav ul li {
     color: #eaeaea; /* Slightly lighter color for the description */
 }
 
+
 /* Footer Section */
 footer {
     text-align: center;
@@ -167,7 +165,7 @@ footer .social-media a:hover {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    background-color: #f4f4f4;
+    background-color: white;
     gap: 20px;
 }
 
@@ -183,7 +181,6 @@ footer .social-media a:hover {
     max-width: 600px;
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section2-right {
@@ -198,27 +195,27 @@ footer .social-media a:hover {
 
 .section2-right .sideways-title {
     position: absolute;
-    top: -2%;
-    left: -60px;
+    top: -2%; /* Adjust the vertical position */
+    left: -60px; /* Move it further to the left to avoid clashing */
     transform: rotate(-90deg);
     font-size: 1.5rem;
     font-weight: bold;
-    color: #6a0dad;
+    color: #6a0dad; /* Matches the theme */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .section2-right .content {
     max-width: 500px;
-    padding-left: 30px;
-    margin-left: 30px;
+    padding-left: 30px; /* Add padding to shift content to the right */
+    margin-left: 30px; /* Optional additional spacing */
 }
 
 .section2-right .content h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
-    padding-left: 10px;
+    padding-left: 10px; /* Slight adjustment for consistent spacing */
 }
 
 .section2-right .content p {
@@ -226,10 +223,104 @@ footer .social-media a:hover {
     margin-bottom: 20px;
     line-height: 1.6;
     color: #555;
-    padding-left: 10px;
+    padding-left: 10px; /* Align text with heading */
 }
 
-/* Adjusted button in Section 2 */
+.section2-right .content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #6a0dad; /* Purple theme button */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-left: 10px; /* Shift button slightly to the right */
+}
+
+.section2-right .content button:hover {
+    background: white;
+    color: #6a0dad;
+    border: 2px solid #6a0dad;
+}
+
+/* SBPK Section Styling with Adjusted Brightness */
+.sbpk-section {
+    position: relative;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.7) 100%), /* Gradient overlay with less darkness on the left */
+        url('Ethan.jpg') no-repeat center left / cover, /* First image */
+        url('Chloe.jpg') no-repeat center center / cover, /* Second image */
+        url('Marcus.jpg') no-repeat center right / cover; /* Third image */
+    color: white; /* White text for contrast */
+    padding: 100px 20px;
+    text-align: center;
+    overflow: hidden; /* Prevent content overflow */
+    background-size: 33.33% 100%; /* Ensure each image takes one-third of the width */
+    background-repeat: no-repeat;
+}
+
+/* Ensure Content Stays on Top */
+.sbpk-content {
+    position: relative;
+    z-index: 1; /* Bring text above the background */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sbpk-section h1 {
+    font-family: 'Brush Script', cursive;
+    font-size: 6rem; /* Large heading size */
+    color: red;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.sbpk-section p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Add more spacing between lines */
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .sbpk-section {
+        background: 
+            linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), /* Lighter gradient for smaller screens */
+            url('Chloe.jpg') no-repeat center center / cover; /* Show only one image */
+    }
+}
+
+/* General Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    background: #6a0dad; /* Purple theme button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: white; /* White background on hover */
+    color: #6a0dad; /* Purple text on hover */
+    border: 2px solid #6a0dad; /* Purple border on hover */
+}
+
+/* Hero Section Button Adjustment */
+.hero-content .button {
+    margin-top: 20px; /* Add spacing above the button */
+}
+
+/* Section 2 Learn More Button */
 .section2-right .content .button {
-    margin-left: 10px;
+    margin-left: 10px; /* Align button with the text */
 }

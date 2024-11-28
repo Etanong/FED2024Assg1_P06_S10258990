@@ -5,6 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTR1M SKATES</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Image Section Styles */
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px; 
+            background-image: url('sscshirt.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+
+        /* About Section Styles */
+        .about-section {
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto; 
+            line-height: 1.6; 
+            font-size: 1.2rem;
+        }
+
+        /* About Section 2 with Gradient */
+        .about-section-2 {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: linear-gradient(to bottom, #6a0dad, #ffffff65); 
+            color: #333;
+        }
+
+        .about-section-2 .text {
+            flex: 1;
+            max-width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .about-section-2 .text h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .about-section-2 .text p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .about-section-2 .image {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .about-section-2 .image img {
+            max-width: 100%;
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+
+        @media (max-width: 768px) {
+            .about-section-2 {
+                flex-direction: column; 
+            }
+
+            .about-section-2 .text, .about-section-2 .image {
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>    <!-- header-->
@@ -20,6 +102,70 @@
         </nav>
     </header>
 
+    <!-- Image Section -->
+    <section class="image-section"></section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h1 style="font-size: 50px;">About Us</h1>
+        <p>
+            Welcome to NTR1M SKATES! We are passionate about providing professional and flexible skating experiences 
+            tailored to skaters of all levels. Whether you’re a beginner or an experienced skater, we’re here to help you 
+            excel in your skating journey.
+        </p>
+    </section>
+
+    <!-- About Section 2 -->
+    <section class="about-section-2">
+        <div class="text">
+            <h2>Why Choose Us?</h2>
+            <p>
+                At NTR1M SKATES, we focus on delivering top-notch skating lessons with a personalized approach. Our team of 
+                experienced coaches ensures that each session is tailored to meet your needs and help you grow as a skater. 
+                Whether you aim to skate competitively or recreationally, we have you covered!
+            </p>
+        </div>
+        <div class="image">
+            <img src="parent2.JPG" alt="Skating Class">
+        </div>
+    </section>
+
+    <!--About Section 2 with Gradient -->
+    <section class="about-section-2" style="background: linear-gradient(to bottom, #ffffff65, #6a0dad)">
+        <div class="text">
+            <h2>Where are we located?</h2>
+            <p>
+                We proudly operate at several key locations, including the iconic Kallang Stadium, the serene Pasir Ris Park,
+                and many other accessible venues across the region. Recognizing the diverse needs of our clients, we also
+                offer highly personalized skating lessons tailored to your preferences. Our dedicated team is committed to
+                making skating lessons as convenient as possible by bringing our expertise directly to your doorstep. 
+                Whether you prefer the comfort of your neighborhood or a specific location that fits your schedule, we 
+                ensure that every session is designed to suit your unique requirements, delivering both flexibility and
+                exceptional learning experiences.
+            </p>
+        </div>
+        <div class="image">
+            <img src="parent.JPG" alt="Skating Class">
+        </div>
+    </section>
+
+      <!--3rd section-->
+    <section class="about-section-2" style="background: linear-gradient(to bottom, #6a0dad,#ffffff65)">
+        <div class="text">
+            <h2>How can you contact us?</h2>
+            <p>
+                Feel free to contact us via the following
+                <ol>
+                    <li>Whatsapp : +65 8856 1866</li>
+                    <li>Instagram : @ntr1m.academy/@sbpk.slide</li>
+                </ol>
+            </p>
+        </div>
+        <div class="image">
+            <img src="parent3.JPG" alt="Skating Class">
+        </div>
+    </section>
+
     <footer>      <!-- footer-->
         <p>© 2024 NTR1M SKATES. All Rights Reserved.</p>
         <div class="social-media">
@@ -27,3 +173,4 @@
         </div>
     </footer>
 </body>
+</html>

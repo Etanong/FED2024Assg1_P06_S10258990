@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NTR1M SKATES</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+    .gradient-section {
+        height: 150px; 
+        background: linear-gradient(to bottom, #d9d9d9, #b3b3b3, black); /* Gradual gradient */
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -28,12 +34,12 @@
         </div>
     </section>
 
-    <section class="section2" id="aboutus">
+    <section class="section2" id="aboutus" style="background: linear-gradient(to bottom, white, #d9d9d9)">
         <div class="section2-left">
             <img src="Class.jpg" alt="About Us Image">
         </div>
         <div class="section2-right">
-            <div class="sideways-title">About Us</div>
+            <div class="sideways-title" style="margin-top: 15px;">About Us</div>
             <div class="content">
                 <h1>Welcome to NTR1M SKATES</h1>
                 <p>
@@ -49,6 +55,64 @@
             </div>
         </div>
     </section>
+
+    <section class="gradient-section"></section>
+
+
+    <section class="section2" id="aboutus" style="background: black">
+        <div class="section2-left">
+            <img src="Chloe.jpg" alt="About Us Image">
+        </div>
+        <div class="section2-right">
+            <div class="content">
+                <h1 style="margin-top: -120px; font-family: 'Brush Script'; color: red; font-style: italic;">
+                    Competetive Team
+                </h1>
+                <p style="color: white;">
+                    Established in 2023, our competitive team SBPK stands as the cornerstone of NTR1M SKATES, embodying our
+                     unwavering dedication to excellence. Specializing in inline freestyle battle slide, we are
+                     committed to fostering skill development and empowering skaters to reach their full potential.
+                    With a relentless drive for success, we strive to set the standard in the skating community, 
+                       inspiring passion and innovation at every step. Click below to learn more
+                </p>
+                <a href="sbpk.html" class="button" style="
+                padding: 10px 20px;
+                font-size: 1rem;
+                border: none;
+                background: red;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: all 0.3s;
+                margin-left: 10px;
+                text-decoration: none;"
+                onmouseover="this.style.background='white'; this.style.color='red';"
+                onmouseout="this.style.background='red'; this.style.color='white';"
+            >Learn More</a>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="info" style="background-color: black;">
+        <a href="About.html" class="card">
+            <h2>About Us</h2>
+            <p>Find out more about NTR1M SKATES</p>
+        </a>
+        <a href="packages.html" class="card">
+            <h2>Packages</h2>
+            <p>What we offer</p>
+        </a>
+        <a href="review.html" class="card">
+            <h2>Review</h2>
+            <p>Click here to look at our reviews</p>
+        </a>
+        <a href="sbpk.html" class="card">
+            <h2>SBPK Team</h2>
+            <p>Find out more about what our competetive team does</p>
+        </a>
+    </section>
+    
 
     <footer>
         <p>© 2024 NTR1M SKATES. All Rights Reserved.</p>
