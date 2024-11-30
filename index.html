@@ -10,6 +10,51 @@
         height: 150px; 
         background: linear-gradient(to bottom, #d9d9d9, #b3b3b3, black); /* Gradual gradient */
     }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        header nav ul {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem; /* Adjust hero title for smaller screens */
+        }
+
+        .hero-content p {
+            font-size: 1rem; /* Reduce paragraph size */
+        }
+
+        .section2 {
+            flex-direction: column; /* Stack images and text vertically */
+            text-align: center;
+        }
+
+        .section2-left, .section2-right {
+            max-width: 100%;
+        }
+
+        .section2-left img {
+            max-width: 100%; /* Ensure images scale properly */
+            height: auto;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr; /* Stack info cards */
+            gap: 15px;
+        }
+
+        .card {
+            text-align: center; /* Center align content */
+        }
+
+        footer {
+            font-size: 0.8rem; /* Adjust footer text size */
+        }
+    }
     </style>
 </head>
 <body>
@@ -58,7 +103,6 @@
 
     <section class="gradient-section"></section>
 
-
     <section class="section2" id="aboutus" style="background: black">
         <div class="section2-left">
             <img src="Chloe.jpg" alt="About Us Image">
@@ -66,7 +110,7 @@
         <div class="section2-right">
             <div class="content">
                 <h1 style="margin-top: -120px; font-family: 'Brush Script'; color: red; font-style: italic;">
-                    Competetive Team
+                    Competitive Team
                 </h1>
                 <p style="color: white;">
                     Established in 2023, our competitive team SBPK stands as the cornerstone of NTR1M SKATES, embodying our
@@ -89,7 +133,6 @@
                 onmouseover="this.style.background='white'; this.style.color='red';"
                 onmouseout="this.style.background='red'; this.style.color='white';"
             >Learn More</a>
-            
             </div>
         </div>
     </section>
@@ -109,10 +152,9 @@
         </a>
         <a href="sbpk.html" class="card">
             <h2>SBPK Team</h2>
-            <p>Find out more about what our competetive team does</p>
+            <p>Find out more about what our competitive team does</p>
         </a>
     </section>
-    
 
     <footer>
         <p>© 2024 NTR1M SKATES. All Rights Reserved.</p>
